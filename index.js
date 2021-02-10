@@ -22,7 +22,7 @@ app.post('/get-access-token', async (req,res) => {
     let result = await axios.default.get(url,{
         headers:{
             'Authorizaion':auth,
-            'Content-Type':"application/json"
+            'content-type':"application/json"
         }
     })
     
